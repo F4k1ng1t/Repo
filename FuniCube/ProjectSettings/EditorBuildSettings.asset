@@ -4,5 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CubeScene.unity
+    guid: 4e2bd4f331109224f8aa6cf7060fb788
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
