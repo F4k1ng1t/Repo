@@ -15,27 +15,27 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += Vector3.forward * 0.5f;
+            transform.position += Vector3.forward;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position += Vector3.back * 0.5f;
+            transform.position += Vector3.back;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.left * 0.5f;
+            transform.position += Vector3.left;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.right * 0.5f;
+            transform.position += Vector3.right;
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            transform.position += Vector3.up * 0.5f;
+            transform.position += Vector3.up;
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            transform.position += Vector3.down * 0.5f;
+            transform.position += Vector3.down;
         }
     }
 }
