@@ -5,15 +5,28 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
+    float s = 0.1f;
     void Start()
     {
-        
-    }
 
+    }
+    public float GetSpeed()
+    {
+        return s;
+    }
+    float SpeedUp()
+    {
+        s += 0.01f;
+        return s;
+    }
+    float SlowDown()
+    {
+        s -= 0.01f;
+        return s;
+    }
     // Update is called once per frame
     void Update()
     {
-	float s = 0.5;
         if (Input.GetKey(KeyCode.W))
         {
             transform.position += Vector3.forward * s;
@@ -40,11 +53,11 @@ public class Player : MonoBehaviour
         }
 		if (Input.GetKey(KeyCode.P) && s <= 100)
 		{
-			s += 0.5;
+			SpeedUp();
 		}
-		if (Input.GetKey(KeyCode.O) && s >= 0)
+		if (Input.GetKey(KeyCode.O) && s > 0)
 		{
-			s -= 0.5;
+            SlowDown();
 		}
 		
     }
