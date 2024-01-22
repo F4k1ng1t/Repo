@@ -18,5 +18,6 @@ public class SpeedUI : MonoBehaviour
     {
         float s = p.GetSpeed();
         string f = $"Speed: {s}";
+        Debug.Log(f);
     }
 }
